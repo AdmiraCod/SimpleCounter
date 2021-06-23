@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #0f0c29;  
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+}
+.container{
+    position: relative;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Number{
+    position: absolute;    
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+    }
+button{
+    margin: 8px;
+    outline: none;
+    font-size: 2em;
+    border-radius: 8px;
+    border: 1px solid;
+    cursor: pointer;
+    outline: none;
+}
+button:focus{
+    background: #ED213A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+    
+    
+}

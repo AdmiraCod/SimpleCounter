@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Counter.css">
+    <title>Counter</title>
+</head>
+<body>
+    <div class="container">
+    <div class="Number" id="Num">0</div>
+    <button class="Inc" id="plus">Increase</button>
+    <button class="Reset" id="zero">Reset</button>
+    <button class="Dec" id="minus">Decrease</button>
+</div>
+</body>
+<script>
+    let plusCounter = document.getElementById('plus');
+    let minusCounter = document.getElementById('minus');
+    let resetCounter = document.getElementById('zero');
+    let numberDisplay = document.getElementById('Num');
+
+    let count = 0;
+    updatDisplay();
+
+    plusCounter.addEventListener("click",()=>{
+        count++;
+        updatDisplay();
+    });
+
+    minusCounter.addEventListener("click",()=>{
+        count--;
+        updatDisplay();
+    });
+
+    resetCounter.addEventListener("click",()=>{
+        count=0;
+        updatDisplay();
+    });
+
+
+
+
+    function updatDisplay(){
+        numberDisplay.innerHTML = count;
+    };
+</script>
+</html>
